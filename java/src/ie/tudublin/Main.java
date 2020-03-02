@@ -14,6 +14,12 @@ public class Main
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new Loops());
     }
+
+    public void helloArrays()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Arrays());
+    }
     
     public void bugZap()
 	{
@@ -65,10 +71,20 @@ public class Main
         // a & b are object references
 
     }
+
+    public void array(){
+        Arrays array = new Arrays();
+
+        array.largest();
+        array.smallest();
+    }
+
+    
     
     public static void main(String[] arg)
     {
         Main main = new Main();
-		main.loops();        
+        main.helloArrays();
+                
     }
 }
