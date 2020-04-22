@@ -45,6 +45,12 @@ public class Main
         processing.core.PApplet.runSketch( a, new Sound2());
     }
 
+    public void sound3()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Sound3());
+    }
+
     public void audioBands()
 	{
 		String[] a = {"MAIN"};
@@ -114,6 +120,6 @@ public class Main
     public static void main(String[] arg)
     {
         Main main = new Main();
-		main.sound1();        
+		main.sound2();        
     }
 }

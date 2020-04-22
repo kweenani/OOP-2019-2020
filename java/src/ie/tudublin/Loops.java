@@ -4,6 +4,10 @@ import processing.core.PApplet;
 
 public class Loops extends PApplet
 {	
+		float cx = width / 2;
+		float cy = height / 2;
+		float radius = 50;
+		float jump = 50;
 	public void settings()
 	{
 		size(500, 500);
@@ -72,12 +76,18 @@ public class Loops extends PApplet
 		}
 	}
 
+	public void ConorJumps(){
+		
+		circle(cx,cy,radius);
+	
+	}
+
 	
 	public void keyPressed()
 	{
 		if (key == ' ')
 		{
-			
+			cy += 50;
 		}
 	}	
 

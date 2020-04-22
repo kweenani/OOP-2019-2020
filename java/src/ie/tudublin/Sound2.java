@@ -104,7 +104,12 @@ public class Sound2 extends PApplet
 		int highestBin = 0;
 		for(int i = 0 ; i < fft.specSize() ; i ++)
 		{
+			float max = fft.getBand(0);
 			line(i, 0, i, fft.getBand(i) * 100);
+			
+			if (fft.getBand(i) > max){
+				max = fft.getBand(i);
+			}
 		}
 
 		float freq1 = fft.indexToFreq(highestBin);
